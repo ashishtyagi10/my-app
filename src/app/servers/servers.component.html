@@ -1,4 +1,8 @@
-<input type="text" class="form-control" (input)="onUpdateServer($event)">
+<!--event binding-->
+<!--<input type="text" class="form-control" (input)="onUpdateServer($event)">-->
+<!--<hr>-->
+<!--two way binding-->
+<input type="text" class="form-control" [(ngModel)]="serverName">
 <hr>
 <p>Server Created is: {{serverName}}</p>
 <hr>
