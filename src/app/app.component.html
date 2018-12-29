@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (selectedView)="onViewSelected($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col">
-      <app-recipes></app-recipes>
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="selectedView==='recipe'"></app-recipes>
+      <app-shopping-list *ngIf="selectedView==='shopping'"></app-shopping-list>
     </div>
   </div>
 </div>
