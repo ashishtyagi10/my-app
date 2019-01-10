@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   selectedView = 'recipe';
 
-  onViewSelected($event) {
-    this.selectedView = $event;
+  selectView(view: string) {
+    this.selectedView = view;
   }
 }

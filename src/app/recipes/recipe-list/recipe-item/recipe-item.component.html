@@ -1,9 +1,8 @@
-<ul class="list-unstyled">
-  <li href="#" class="media">
+  <div class="media my-4" (click)="onSelected()" style="cursor: pointer">
     <div class="media-body">
       <h5 class="mt-0 mb-1">{{recipe.name}}</h5>
       {{recipe.description}}
     </div>
     <img [src]="recipe.imagePath" alt="" class="img-thumbnail" style="max-height: 50px">
-  </li>
-</ul>
+  </div>
+
